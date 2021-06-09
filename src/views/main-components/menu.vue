@@ -34,11 +34,11 @@ export default {
           name: "系统管理",
           children: [
             {
-              url: "/user",
+              url: "/system/user",
               name: "用户管理",
             },
             {
-              url: "/setting",
+              url: "/system/setting",
               name: "设置",
             },
           ],

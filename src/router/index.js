@@ -44,12 +44,12 @@ const routes = [
     component: Main,
     children: [
       {
-        path: '/user',
+        path: 'user',
         name: 'User',
         component: () => import('../views/apps/system/user/user')
       },
       {
-        path: '/setting',
+        path: 'setting',
         name: 'Setting',
         component: () => import('../views/apps/system/setting/setting')
       },
