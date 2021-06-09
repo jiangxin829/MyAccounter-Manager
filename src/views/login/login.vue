@@ -42,6 +42,7 @@ export default {
   methods: {
     handleLogin() {
       if (this.form.userName === 'admin' && this.form.password === 'admin') {
+        sessionStorage.setItem('userName', this.form.userName)
         this.$router.push({
           name: 'Home'
         })
