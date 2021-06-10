@@ -23,7 +23,7 @@ export default {
       menu: [
         {
           url: "/home",
-          name: "首页"
+          name: "主页"
         },
         {
           url: "/statistics",

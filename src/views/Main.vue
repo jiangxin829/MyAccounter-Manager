@@ -4,7 +4,9 @@
       <Menu />
     </el-aside>
     <el-container>
-      <el-header>Header</el-header>
+      <el-header class="header">
+        <HeadMenu />
+      </el-header>
       <el-main>
         <router-view />
       </el-main>
@@ -14,10 +16,11 @@
 
 <script>
 import Menu from './main-components/menu.vue'
+import HeadMenu from './main-components/headMenu'
 
 export default {
   name: 'Main',
-  components: { Menu },
+  components: { Menu, HeadMenu },
   data() {
     return {
 
@@ -29,8 +32,13 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="less" scoped>
+@import "styles/theme.less";
 .container {
   height: 100%;
+  background-color: @body-background;
+}
+.header {
+  border-bottom: 1px solid @subsidiary-color ;
 }
 </style>
