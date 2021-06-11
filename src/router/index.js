@@ -8,7 +8,7 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    redirect: '/home'
+    redirect: '/home' // 重定向
   },
   {
     path: '/login',
@@ -16,8 +16,8 @@ const routes = [
     component: () => import('../views/login/login')
   },
   {
-    path: '/home',
-    name: 'Home',
+    path: '/index',
+    redirect: '/home', // 重定向
     meta: {
       title: '主页'
     },
@@ -41,6 +41,7 @@ const routes = [
       },
       {
         path: '/system',
+        redirect: '/system/user', // 重定向
         name: 'System',
         meta: {
           title: '系统管理'
