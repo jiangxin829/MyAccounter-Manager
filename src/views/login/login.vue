@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <div style="height: 30%"></div>
     <div class="login-box">
       <el-form ref="form" :model="form" :rules="rules" label-width="80px">
         <el-form-item label="用户名" prop="userName">
@@ -58,11 +59,12 @@ export default {
 .container {
   display: flex;
   flex: 1;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
+  height: 100%;
 }
 .login-box {
-  margin-top: 300px;
   padding: 20px 20px 0;
   width: 700px;
   height: 200px;
